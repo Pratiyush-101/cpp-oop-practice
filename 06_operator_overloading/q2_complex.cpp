@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cmath>
 using namespace std;
 
 class Complex{
@@ -20,7 +19,7 @@ class Complex{
         }
 
         bool operator==(Complex c){
-            return real == c.real, imaginary == c.imaginary;
+            return real == c.real && imaginary == c.imaginary;
         }
 };
 
